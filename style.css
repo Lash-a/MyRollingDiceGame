@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0), rgb(11, 82, 82));
+    font-family: 'Noto Serif JP', serif;
+}
+
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 19px 12px 40px 20px #00ffff9e;
+}
+
+.active .player-name::after{
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #00ffff9e;
+    margin-left: 20px;
+}
+
+.active{
+    box-shadow: inset 0px 0px 50px #6f6f6f00, inset 20px 0px 20px 0px #00bcff, inset 0px 0px 80px #000000, inset 0px 0px 300px #000000, inset 0px 2px 300px #000, 0 0 50px #fff0, -10px 0 80px #ffffff, 0px 0px 80px #000000; 
+    ;
+}
+
+.player-0-panel{
+    float: left;
+    max-width: 30%;
+    padding: 100px;
+    width: 100%;
+    background: black;
+    height: 400px;
+    text-align: center;
+}
+
+.player-1-panel{
+    background: #073434;
+    height: 400px;
+    float: left;
+    max-width: 30%;
+    padding: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-new{
+    width: 20%;
+    background: none;
+    height: 5%;
+    border: none;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-54%);
+    cursor: pointer;
+    font-size: 23px;
+    text-transform: capitalize;
+    outline: inherit;
+}
+.ion-ios-plus-outline, .ion-ios-loop, .ion-ios-download-outline{
+    margin-right: 10px;
+    color: #00ffff9e;
+}
+
+.btn-hold{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 20%;
+    transform: translate(-59%);
+    background: none;
+    border: none;
+    font-size: 23px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    outline: inherit;
+}
+
+
+.btn-roll{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-57%);
+    width: 20%;
+    font-size: 23px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-transform: capitalize;
+    outline: inherit;
+}
+
+.dice{
+    position: absolute;
+    height: 100px;
+    top: 35%;
+    left: 45%;
+}
+
+.player-score{
+    margin-top: 45px;
+    font-size: 3.5em;
+}
+
+.player-name{
+    font-size: 3.5em;
+}
+
+.player-current-box{
+    background: #028484de;
+    max-width: 40%;
+    margin: 0 auto;
+    margin-top: 50%;
+    height: 80px;
+    border-radius: 15px;
+    box-shadow: 14px 9px 15px 0px #00ffff9e;
+}
+
+.player-current-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    font-size:1.3em;
+}
+
+.player-current-score{
+    display: flex;
+    height: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size:1.3em;
+}
+
+
+.btn-new:hover, .btn-hold:hover, .btn-roll:hover{
+    font-weight: 550;
+}
+
+
+
+.winner{
+    box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #02020242, inset -20px 0 80px #01e4e4, inset 20px 0 300px #181e27, inset -20px 0 300px #0ff, 0 0 50px #000, -10px 0 80px #0000, 10px 0 80px #031f1f;
+}
+
+
+
+
+
+
+
+
+/* pizdeeeeec */
+
+/* 
+marjvena divis
+
+box-shadow: inset 0 0 50px #fff, inset 20px 0 80px #02020242, inset -20px 0 80px #01e4e4, inset 20px 0 300px #181e27, inset -20px 0 300px #0ff, 0 0 50px #000, -10px 0 80px #0000, 10px 0 80px #031f1f;
+
+
+
+meore varianti
+
+inset 0 0 50px #fff3, inset 20px 0 80px #02020242, inset -20px 0 80px #01c5e4, inset 20px 0 300px #181e27, inset -20px 0 300px #0ff, 0 0 50px #000, -10px 0 80px #0000, 10px 0 80px #031f1f;
+
+
+marcxena divis
+
+inset 0px 0px 50px #6f6f6f, inset 0px 0px 80px #00bcff45, inset 0px 0px 80px #000000, inset 0px 0px 300px #000000, inset 0px 2px 300px #000, 0 0 50px #fff0, -10px 0 80px #ffffff, 0px 0px 80px #000000;
+
+
+inset 0px 0px 50px #6f6f6f00, inset 0px 0px 80px #00bcff, inset 0px 0px 80px #000000, inset 0px 0px 300px #000000, inset 0px 2px 300px #000, 0 0 50px #fff0, -10px 0 80px #ffffff, 0px 0px 80px #000000;
+
+
+inset 0px 0px 50px #6f6f6f00, inset 20px 0px 20px 0px #00bcff, inset 0px 0px 80px #000000, inset 0px 0px 300px #000000, inset 0px 2px 300px #000, 0 0 50px #fff0, -10px 0 80px #ffffff, 0px 0px 80px #000000; 
+
+//sauketesoa 
+*/
